@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorConnect - Find a Tutor</title>
+</head>
+<body>
+    <!-- Header -->
+    <header style="background: url('background.jpg') no-repeat center center; background-size: cover; padding: 120px; text-align: center; color: white;">
+        <img src="logo.png" alt="TutorConnect Logo" style="position: absolute; top: 20px; left: 20px; width: 80px; height: auto;">
+    </header>
+    <!-- Navigation Menu -->
+    <nav style="margin: 20px 0; text-align: center; position: relative; width: 100%; top: 0; left: 0; background-color: white; padding: 10px 0; box-shadow: 0 4px 2px -2px gray;">
+        <a href="index.html" style="margin: 0 15px; text-decoration: none; color: rgb(6, 143, 86); font-weight: bold;">Home</a>
+        <a href="findtutor.html" style="margin: 0 15px; text-decoration: none; color: rgb(6, 143, 86); font-weight: bold;">Find a Tutor</a>
+        <a href="login.html" style="margin: 0 15px; text-decoration: none; color: rgb(6, 143, 86); font-weight: bold;">Login</a>
+        <a href="register.html" style="margin: 0 15px; text-decoration: none; color: rgb(6, 143, 86); font-weight: bold;">Register</a>
+        <a href="about.html" style="margin: 0 15px; text-decoration: none; color: rgb(6, 143, 86); font-weight: bold;">About Us</a>
+        <a href="contact.html" style="margin: 0 15px; text-decoration: none; color: rgb(6, 143, 86); font-weight: bold;">Contact</a>
+        <a href="reviews.html" style="margin: 0 15px; text-decoration: none; color: rgb(6, 143, 86); font-weight: bold;">Reviews</a>
+    </nav>
+    <main>
+        <!-- Search Section -->
+        <section style="text-align: center; padding: 100px 0; position: relative; width: 100%; box-sizing: border-box;" class="search-section">
+            <div class="video-background" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: -1;">
+                <video autoplay muted loop id="background-video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    <source src="Z:\video\Learning.mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div style="position: relative; z-index: 1;">
+                <h2>Search for Tutors by Subject</h2>
+                <p>Enter the subject you need help with, and we'll find the best tutors for you.</p>
+                <form action="search-results.html" method="get">
+                    <input type="text" name="subject" placeholder="Enter a subject (e.g., Math, Science)" style="padding: 10px; width: 300px; border-radius: 5px; border: 1px solid #ccc;">
+                    <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Popular Subjects Section -->
+        <section>
+            <h3>Popular Subjects</h3>
+            <ul>
+                <li><a href="search-results.html?subject=PureMaths">Pure Maths 3</a></li>
+                <li><a href="search-results.html?subject=CS3">Computer Science 3</a></li>
+                <li><a href="search-results.html?subject=Acc3">Accounting 3</a></li>
+                <li><a href="search-results.html?subject=IS3">Information Systems 3</a></li>
+            </ul>
+        </section>
+
+        <!-- Featured Tutors Section -->
+        <section>
+            <h3>Featured Tutors</h3>
+            <article>
+                <img src="images/mtho.jpeg" alt="Mthobisi Latha" width="100" height="150" style="object-fit: cover;">
+                <h4>Mtho - Math 3 Expert</h4>
+                <p>Mtho specializes in algebra and calculus, with over 10 years of experience.</p>
+            </article>
+            <article>
+                <img src="images/kwenza.jpeg" alt="Kwenza Hadebe" width="100" height="150" style="object-fit: cover;">
+                <h4>Kwenza - CS3 Guru</h4>
+                <p>Kwenza has a passion for Java (Data structures) and compilers, making complex topics easy to understand.</p>
+            </article>
+            <article>
+                <img src="images/rinae.jpeg" alt="Rinae Makhado" width="100" height="150" style="object-fit: cover;">
+                <h4>Rinae - IS3 Specialist</h4>
+                <p>Rinae offers tutoring in Data Analysis and SQL, helping students become experts.</p>
+            </article>
+            <article>
+                <img src="images/siya.jpeg" alt="Siyabulela Gongqa" width="100" height="150" style="object-fit: cover;">
+                <h4>Siya - Accounting 3 Master</h4>
+                <p>Siya offers tutoring in Taxation, Auditing, and cash flows. People call him the king of balancing books.</p>
+            </article>
+        </section>
+    </main>
+
+  
+    <!-- FOOTER -->
+    <footer style="background-color:  #D4F1F4; text-align: left; padding: 5px; color: black;"> 
+        <p>&copy; 2024 TutorConnect. All rights reserved.</p>
+        <p>Authors: Kwenza Hadebe | Rinae Makhado | Siyabulela Gongqa | Mthobisi Latha</p>
+        <p>Contact: <a href="mailto:hadebezohh@gmail.com">hadebezohh@gmail.com</a></p>
+        <p>Follow us on:
+          <a href="https://facebook.com/tutorconnect" target="_blank" style="color: black;">Facebook</a> |
+          <a href="https://twitter.com/tutorconnect" target="_blank" style="color: black;">Twitter</a> |
+          <a href="https://instagram.com/tutorconnect" target="_blank" style="color: black ;">Instagram</a>
+        </p>
+      </footer>
+</body>
+</html>
